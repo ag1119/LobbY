@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "963417541642",
+    "firebase_url": "https://lobby-df1e6.firebaseio.com",
+    "project_id": "lobby-df1e6",
+    "storage_bucket": "lobby-df1e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963417541642:android:fad6c930e45d5fa2",
+        "android_client_info": {
+          "package_name": "com.example.abhishek.lobby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963417541642-9cb0la4eskfjcu97ml6fedm6vuu7jqfi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhishek.lobby",
+            "certificate_hash": "8ad75dfd5212a69318243fe059ba3ab8a98f044e"
+          }
+        },
+        {
+          "client_id": "963417541642-ol58ovf4crn8rql8sccdr2fui19vambg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC61keaeI9e_oCn6-NwSoUSUyegyOOmN-4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963417541642-ol58ovf4crn8rql8sccdr2fui19vambg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

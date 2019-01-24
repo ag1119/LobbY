@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.abhishek.lobby.Comments">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/action_bar"
+        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Comments"
+            android:paddingStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorCenter"
+            android:textStyle="bold"
+            android:background="@drawable/cust_back2"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/action_bar"
+        android:layout_above="@+id/commentBox"
+        android:background="@color/light_white">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/commentBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/commentText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:hint="Write a comment..."
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="@color/light_black"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:outlineProvider="none"
+            android:layout_weight="0.9"/>
+        <TextView
+            android:id="@+id/post"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="post"
+            android:textColor="@color/light_black"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            android:enabled="false"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</TableLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lobby</string>
+    <string name="tagline">Socialize like never before&#8230;</string>
+    <string name="otpText">OTP varified</string>
+    <string name="mobNoHint">10 digit mobile number</string>
+    <string name="otpNoHint">Enter otp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

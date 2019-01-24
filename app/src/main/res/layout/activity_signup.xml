@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhishek.lobby.AuthActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cust_background"
+        android:alpha="1">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="LobbY"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/tagline"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+
+    <EditText
+        android:id="@+id/mobileNo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/tagline"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:hint="@string/mobNoHint"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/tagline"
+        android:layout_toStartOf="@+id/mobileNo"
+        android:layout_marginTop="100dp"
+        android:src="@android:drawable/ic_menu_call"/>
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mobileNo"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="number"
+            android:maxLength="6"
+            android:visibility="invisible"
+            android:digits="0123456789"
+            android:hint="Enter otp"/>
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otp"
+            android:layout_alignEnd="@+id/otp"
+            android:text="Resend otp"
+            android:visibility="invisible"
+            android:textSize="16sp"/>
+
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/otp"
+        android:layout_marginTop="40dp"
+        android:text="continue"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/cust_btn"
+        android:enabled="true" />
+
+    </RelativeLayout>
+</TableLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhishek.lobby.UserName">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cust_background"
+        android:alpha="1">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="LobbY"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/tagline"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"/>
+
+        <EditText
+            android:id="@+id/usernameEt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tagline"
+            android:layout_marginTop="100dp"
+            android:hint="Enter your LobbY handle"
+            android:textColor="@color/white"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/cust_btn"
+            android:text="Continue"
+            android:textColor="@color/colorCenter"
+            android:onClick="onContinue"/>
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/continueBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="New user?"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="onRegister"/>
+
+
+</RelativeLayout>
+</TableLayout>

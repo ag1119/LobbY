@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhishek.lobby.SetProfile">
+
+        <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/cust_back2"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="Edit Profile"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="34dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_done_black_24dp"
+                android:tint="@color/colorPrimaryDark"
+                android:onClick="onDone"/>
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilepic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/light_white"
+                app:civ_border_width="1dp"
+                android:scaleType="centerCrop"
+                android:onClick="onChangePhoto"/>
+
+            <TextView
+                android:id="@+id/changepic"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Upload Photo"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"
+                android:textSize="20sp"
+                android:onClick="onChangePhoto"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/colorCenter"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:background="@color/white"/>
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Name"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorCenter"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@color/white"/>
+            <EditText
+                android:id="@+id/usernameEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Username"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bio"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorCenter"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:background="@color/white"/>
+            <EditText
+                android:id="@+id/bioEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Bio"
+                android:textColorHint="@color/hint_color"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Private Information"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorCenter"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</TableLayout>
